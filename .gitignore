@@ -1,0 +1,32 @@
+# build artifacts
+## maven
+target/
+## eclipse
+bin/
+build/
+## for some odd not-maven and not-eclipse build targets
+*.class
+
+# eclipse project artifacts
+.settings/
+.classpath
+.project
+
+# IntelliJ project artifacts
+.idea/
+*.iml
+
+# test artifacts
+## .gradle directory contains derived information about the gradle build 
+## (e.g. cached outputs/input). 
+## Move gradle.setting file under .gradle to root folder of the project. 
+.gradle/
+
+#logs
+*.log
+*_log
+
+# backup files
+*.bak
+*~
+*.zip
