@@ -10,8 +10,11 @@ import java.util.Set;
  */
 final class StringCombinations {
 
-    public Set<String> combinations(final String str, int l, int r) {
-        Set<String> combinations = new HashSet<String>();
+    public Set<String> combinations(final String str){
+        return combinations(str, 0, str.length() -1);
+    }
+    private Set<String> combinations(final String str, int l, int r) {
+        Set<String> combinations = new HashSet<>();
         if (l == r) {
             combinations.add(str);
         }
